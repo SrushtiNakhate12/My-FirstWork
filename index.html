@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css&quot; rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+</head>
+    <style>
+        .main-part{
+            background-image: url("./public/images/netflixbanner.jpg");
+            background-size: cover;
+            color:white;
+            border-bottom: 7px solid lightslategray;
+        }
+        .shade-background {
+            height: 768px;
+            background-color: rgba(0,0,0,0.6);
+        }
+        .brand-name {
+            font-size: 35px;
+            font-weight: bold;
+            color:red;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+        .login-group {
+            display: flex;
+        }
+        select {
+            margin-right: 20px;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            text-align: center;
+        }
+        h1 {
+            width: 600px;
+            font-size: 55px;
+            font-weight: bold;
+        }
+        .input-group{
+            height: 60px;
+        }
+        .layout-page{
+            height:500px;
+            background-color: black;
+            color: white;
+            border-bottom: 7px solid lightslategray;
+            padding:100px;
+            padding-left: 150px;
+            padding-right: 150px;
+        
+        }
+        .layout{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            align-items: center;
+   
+        }
+        .email-page{
+            text-align: center;
+            background-color: black;
+            color: white;
+            height: 200px;
+            border-bottom: 7px solid lightslategray;
+        }
+        .heading{
+            margin-left:140px;
+            font-size: 20px;
+            margin-bottom:-60px;
+           
+        }
+
+        .parts{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            padding: 100px;
+            height: 300px;
+           
+        }
+        footer{
+            background-color: black;
+            color:darkgrey;
+            padding: 70px;
+
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 10px;
+        }
+        button{
+            background-color: red;
+            padding: 25px;
+        }
+        select{
+            padding: 18px;
+            background-color: transparent;
+            color: white;
+        }
+        input{
+            padding: 25px;
+            width: 400px;
+        }
+        .sign{
+            padding: 5px;
+            border-radius: 4px;
+        
+        }
+    </style>
+</head>
+<body>
+<div class="main-part">
+  <div class="shade-background">
+     <header>
+         <div class="brand-name">
+            NETFLIX
+         </div>
+         <div class="login-group">
+            <div class="input-group">
+                <span class="bi bi-globe input-group-text"></span>
+                <select class="form-select">
+                    <option>Choose Language</option>
+                    <option>English</option>
+                    <option>हिंदी</option>
+                    <option>मराठी</option>
+                </select>
+            </div>
+            <button class="sign">Signin</button>
+         </div>
+     </header>
+     <section>
+         <main>
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p class="mt-4">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="input-group input-group-lg">
+                <input type="email" placeholder="Email address" class="form-control">
+                <button>Get Started
+                    <span class="bi bi-chevron-right"></span>
+                </button>
+            </div>
+         </main>
+     </section>
+  </div>
+</div>
+
+<div class="layout-page">
+    <div class="layout">
+        <div>
+            <h1>Enjoy on your TV.</h1>
+            <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
+        </div>
+        <div align="center">
+            <img src="./public/images/netflixtv.png" height="250" width="400">
+        </div>
+
+    </div>
+</div>
+<div class="layout-page">
+    <div class="layout">
+        <div align="center">
+            <img src="./public/images/netflixmobile.jpg" height="250" width="400">
+        </div>
+        <div>
+            <h1>Download your shows to watch offline.</h1>
+            <h3 >Save your favourites easily and always have something to watch.</h3>
+        </div>
+    </div>
+</div>
+<div class="layout-page">
+    <div class="layout">
+        <div>
+            <h1>Watch everywhere.</h1>
+            <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+        </div>
+        <div align="center">
+            <img src="./public/images/netflixshow.png" height="250" width="400">
+        </div>
+    </div>
+</div>
+<div class="layout-page">
+    <div class="layout">
+        <div align="center">
+            <img src="./public/images/netflixchildren.png" height="250" width="400">
+        </div>
+        <div>
+            <h1>Download your shows to watch offline.</h1>
+            <h3 >Save your favourites easily and always have something to watch.</h3>
+        </div>
+    </div>
+</div>
+<section class="email-page">
+    <div class="email">
+        <p class="mt-4 mb-3">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="input-group input-group-lg">
+                <input type="email" placeholder="Email address" class="form-control">
+                <button>
+                    Get Started
+                    <span class="bi bi-chevron-right"></span>
+                </button>
+            </div><br><br>
+    </div>
+</section>
+
+<footer>
+    <div class="heading">
+        <p>Questions? Call 000-800-040-1843</p>
+    </div>  
+    <div class="parts">
+        <div>
+            <ul>
+                <li>FAQ</li>
+                <li>Investor Relations</li>
+                <li>Privacy</li>
+                <li>Speed Test</li>
+                <li>
+                    <div class="input-group">
+                        <span class="bi bi-globe input-group-text"></span>
+                        <select class="form-select">
+                            <option>English</option>
+                            <option>हिन्दी</option>
+                            <option>मराठी</option>
+                        </select>
+                    </div>
+                </li>
+                <li>Netflix India</li>
+            </ul>
+        </div>
+            <div>
+                <ul>
+                    <li>Help Centre</li>
+                    <li>Jobs</li>
+                    <li>Cookies Preferences</li>
+                    <li>Legal Notice</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Account</li>
+                    <li>Ways to watch</li>
+                    <li>Corporate Information</li>
+                    <li>Only on Netflix</li>
+   
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Media Centre</li>
+                    <li>Terms of use</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</footer>
+
+</body>
+</html>
